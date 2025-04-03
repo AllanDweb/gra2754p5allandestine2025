@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Honda Designs | Allan Destine 2025</title>
+<style type="text/css">
+body{
+    margin: 0;
+    background-color: #A4DBFF;
+    text-align-last: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url("honda-background-58l2mrba045d6u1q.jpg") no-repeat center center fixed;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	}
+}
+wrapper {
+    background-color: #FEFFF3;
+    width: 670px;
+    height: 680px;
+    display: block;
+    margin: auto;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+header {
+    height: auto;
+    width: auto;
+    background-color: #FFFFFF;
+}
+footer {
+    font-size: 12px;
+    padding: 8px 0;
+    font-family: sans-serif;
+    background-color: #FFFFFF;
+    margin-top: 67px;
+}
+	div {
+    display: inline-block;
+    box-sizing: border-box;
+	}
+#div1 {
+    background-repeat: no-repeat;
+    height: 492px;
+    width: 737px;
+    background-image: url(HondaCivic_SideView.jpeg);
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-position: 95% 48%;
+    background-size: 737px 492px;
+}
+#div2, #div3, #div4, #div5 {
+    width: 128px;
+    height: 134px;
+}
+p {
+    color: #FFFFFF;
+    font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    font-size: 41px;
+    background-color: rgba(0, 0, 0, 0.5); 
+	opacity: 0.8;
+	
+}
+#div2 img, #div3 img, #div4 img, #div5 img {
+    width: 100%;
+    height: auto;
+ 
+}
+</style>
+	<script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+</script>
+</head>
+
+<body>
+	<header>
+		<img src="Honda logo.png"  alt="" width="auto" height="140">
+
+	</header>
+	<p>Design your dream car!</p>
+<wrapper>
+	<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+ <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="HondaCivic_SideView.jpeg" draggable="true" ondragstart="drag(event)" id="drag2" width="737" height="492"></div>
+ <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"> <img src="HondaCivic_SideView1.jpg" draggable="true" ondragstart="drag(event)" id="drag3" width="737" height="492"></div>
+ <div id="div4" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="HondaCivic_SideView3.png" draggable="true" ondragstart="drag(event)" id="drag4" width="737" height="492"></div>
+<div id="div5" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="HondaCivic_SideView4.png" draggable="true" ondragstart="drag(event)" id="drag5" width="737" height="492">
+</div>
+  
+  <footer> © 2025, Allan Destine. This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</footer>
+</wrapper>
+</body>
+</html>
